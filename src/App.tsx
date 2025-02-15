@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Main from './components/Main'
-import Privacy from './components/Privacy'
-import Withdrawal from './components/Withdrawal'
-import Contact from './components/Contact'
+import Main from './pages/Main'
+import Privacy from './pages/Privacy'
+import Withdrawal from './pages/Withdrawal'
+import Contact from './pages/Contact'
 function App() {
   return (
     <BrowserRouter>

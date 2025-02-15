@@ -1,19 +1,19 @@
-import NavBar from "./NavBar"
+import NavBar from "../components/NavBar"
 
 const Contact = () => {
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-gradient-to-b from-[#16161F] to-[#2B2D3E]">
             <NavBar />
-            <div className="max-w-4xl mx-auto py-8 px-4">
-                <h1 className="text-3xl font-bold text-gray-900 mb-8">문의하기</h1>
+            <div className="max-w-4xl mx-auto py-8 px-4 pt-20">
+                <h1 className="text-3xl font-bold text-white mb-8">문의하기</h1>
                 
-                <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <div className="bg-[#2B2D3E] shadow-md rounded px-8 pt-6 pb-8 mb-4">
                     <div className="mb-6">
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+                        <label className="block text-gray-200 text-sm font-bold mb-2" htmlFor="name">
                             이름
                         </label>
                         <input 
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            className="shadow appearance-none border bg-[#383A4E] border-gray-500 rounded w-full py-2 px-3 text-gray-100 leading-tight focus:outline-none focus:shadow-outline"
                             id="name"
                             type="text"
                             placeholder="이름을 입력하세요"

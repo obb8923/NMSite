@@ -1,18 +1,18 @@
-import NavBar from "./NavBar";
+import NavBar from "../components/NavBar";
 
 const Withdrawal = () => {
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-gradient-to-b from-[#16161F] to-[#2B2D3E] relative overflow-hidden">
             <NavBar />
-            <div className="max-w-4xl mx-auto py-8 px-4">
-                <h1 className="text-3xl font-bold text-gray-900 mb-8">회원탈퇴</h1>
+            <div className="max-w-4xl mx-auto py-8 px-4 pt-20">
+                <h1 className="text-3xl font-bold text-white mb-8">회원탈퇴</h1>
                 
-                <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <div className="bg-white/10 backdrop-blur-md shadow-md rounded px-8 pt-6 pb-8 mb-4">
                     <div className="mb-6">
-                        <p className="text-gray-700 text-base mb-4">
+                        <p className="text-gray-200 text-base mb-4">
                             회원탈퇴를 진행하기 전에 아래 내용을 반드시 확인해주세요:
                         </p>
-                        <ul className="list-disc list-inside text-gray-600 space-y-2 mb-6">
+                        <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
                             <li>탈퇴 시 모든 개인정보가 삭제되며 복구가 불가능합니다.</li>
                             <li>진행 중인 거래나 문의가 있는 경우 처리 완료 후 탈퇴해주세요.</li>
                             <li>탈퇴 후 재가입은 30일 후에 가능합니다.</li>
