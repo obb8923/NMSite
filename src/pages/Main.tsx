@@ -1,30 +1,16 @@
 import NavBar from '../components/NavBar';
 const Main = () => {
     return (
-        <div className="min-h-screen bg-gradient-to-b from-[#16161F] to-[#2B2D3E] relative overflow-hidden">
+        <div className="min-h-screen bg-gradient-to-b from-[#16161F] to-[#2B2D3E] overflow-hidden">
             <NavBar />
-            
             {/* 메인 섹션 */}
-            <main className="relative flex items-end h-screen pb-32">
-                {/* 별들 섹션 */}
-                <div className="absolute top-0 w-full h-[70vh]">
-                    <div className="relative w-full h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <Star className="absolute left-[15%] top-[20%]" />
-                        <GlowingStar className="absolute left-[25%] top-[35%]" />
-                        <Star className="absolute left-[40%] top-[15%]" />
-                        <GlowingStar className="absolute left-[55%] top-[25%]" />
-                        <Star className="absolute left-[70%] top-[30%]" />
-                        <GlowingStar className="absolute left-[85%] top-[20%]" />
-                        <Star className="absolute left-[10%] top-[45%]" />
-                        <GlowingStar className="absolute left-[30%] top-[50%]" />
-                        <Star className="absolute left-[50%] top-[40%]" />
-                        <GlowingStar className="absolute left-[75%] top-[45%]" />
-                        <Star className="absolute left-[90%] top-[35%]" />
-                    </div>
-                </div>
-
-                <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 mb-20">
+            <main className="flex items-start h-screen mt-[100px]">
+                <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
                     <div className="text-center">
+                        <div className="flex justify-center mb-[80px]">
+                        <GlowingStar className="w-60 h-60" />
+                        </div>
+
                         <h2 className="text-4xl font-extrabold text-white sm:text-5xl">
                             따뜻한 마음을 전하는 내일모래
                         </h2>
