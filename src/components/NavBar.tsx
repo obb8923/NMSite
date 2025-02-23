@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -20,7 +21,26 @@ const NavBar = () => {
               <Link to="#" className="text-[#fafafa] hover:text-white px-3 py-2">회사소개</Link>
               <Link to="#" className="text-[#fafafa] hover:text-white px-3 py-2">서비스</Link>
               <Link to="/contact" className="text-[#fafafa] hover:text-white px-3 py-2">문의하기</Link>
-              <Link to="/privacy" className="text-[#fafafa] hover:text-white px-3 py-2">개인정보처리방침</Link>
+              
+              <div className="relative">
+                <button 
+                  className="text-[#fafafa] hover:text-white px-3 py-2 flex items-center"
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                >
+                  약관 및 정책
+                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isDropdownOpen ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"} />
+                  </svg>
+                </button>
+                {isDropdownOpen && (
+                  <div className="absolute right-0 mt-2 w-60 bg-[#20222F] rounded-md shadow-lg py-1">
+                    <Link to="/terms" className="block px-4 py-2 text-[#fafafa] hover:bg-gray-700">서비스이용약관</Link>
+                    <Link to="/privacy" className="block px-4 py-2 text-[#fafafa] hover:bg-gray-700">개인정보처리방침</Link>
+                    <Link to="/locationTerms" className="block px-4 py-2 text-[#fafafa] hover:bg-gray-700">위치기반 서비스 이용약관</Link>
+                    <Link to="/marketingTerms" className="block px-4 py-2 text-[#fafafa] hover:bg-gray-700">내일모래 마케팅 정보 수신 동의</Link>
+                  </div>
+                )}
+              </div>
 
               <Link to="/withdrawal" className="text-red-600 hover:text-red-700 px-3 py-2">회원탈퇴</Link>
             </div>
@@ -44,7 +64,10 @@ const NavBar = () => {
               <Link to="#" className="text-[#fafafa] hover:text-white block px-3 py-2">회사소개</Link>
               <Link to="#" className="text-[#fafafa] hover:text-white block px-3 py-2">서비스</Link>
               <Link to="/contact" className="text-[#fafafa] hover:text-white block px-3 py-2">문의하기</Link>
+              <Link to="/terms" className="text-[#fafafa] hover:text-white block px-3 py-2">서비스이용약관</Link>
               <Link to="/privacy" className="text-[#fafafa] hover:text-white block px-3 py-2">개인정보처리방침</Link>
+              <Link to="/location-terms" className="text-[#fafafa] hover:text-white block px-3 py-2">위치기반 서비스 이용약관</Link>
+              <Link to="/marketing-terms" className="text-[#fafafa] hover:text-white block px-3 py-2">내일모래 마케팅 정보 수신 동의</Link>
               <Link to="/withdrawal" className="text-red-600 hover:text-red-700 block px-3 py-2">회원탈퇴</Link>
             </div>
           </div>
