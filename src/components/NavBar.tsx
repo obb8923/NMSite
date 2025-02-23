@@ -66,8 +66,8 @@ const NavBar = () => {
               <Link to="/contact" className="text-[#fafafa] hover:text-white block px-3 py-2">문의하기</Link>
               <Link to="/terms" className="text-[#fafafa] hover:text-white block px-3 py-2">서비스이용약관</Link>
               <Link to="/privacy" className="text-[#fafafa] hover:text-white block px-3 py-2">개인정보처리방침</Link>
-              <Link to="/location-terms" className="text-[#fafafa] hover:text-white block px-3 py-2">위치기반 서비스 이용약관</Link>
-              <Link to="/marketing-terms" className="text-[#fafafa] hover:text-white block px-3 py-2">내일모래 마케팅 정보 수신 동의</Link>
+              <Link to="/locationTerms" className="text-[#fafafa] hover:text-white block px-3 py-2">위치기반 서비스 이용약관</Link>
+              <Link to="/marketingTerms" className="text-[#fafafa] hover:text-white block px-3 py-2">내일모래 마케팅 정보 수신 동의</Link>
               <Link to="/withdrawal" className="text-red-600 hover:text-red-700 block px-3 py-2">회원탈퇴</Link>
             </div>
           </div>
