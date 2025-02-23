@@ -29,18 +29,6 @@ const Main = () => {
 
 export default Main;
 
-const Star = ({ className = "" }) => {
-    return (
-        <img 
-            className={className}
-            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Star.png" 
-            alt="Star" 
-            width="40" 
-            height="40" 
-        />
-    )
-}
-
 const GlowingStar = ({ className = "" }) => {
     return (
         <img 
